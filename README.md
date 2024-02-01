@@ -1,4 +1,4 @@
 # ProjecteM17
-<br>ME GUSTA TU CULO; NO TU MALA VIBRA</br>
-ELDIABLOCÑOÑOÑOÑOÑÑO
+<br>EL SEGUNDO TE LO EMPATÉ</br>
+<br>QUÉÉÉÉÉÉÉÉÉ?!?!?!?!?!</br>
 Y ESQUE TU PAIIIIII NO TE QUIERE CONMIGO
