@@ -17,7 +17,7 @@
 
 <!-- Vulnerabilities List -->
 ## Vulnerabilities
-* si
+* no
 * SQL Injection
 * Cross Site Scripting (XSS)
 * Command Injection
