@@ -1,27 +1,27 @@
-
-
 <?php
 
 
 
 try { 
     
-    $vt_kullanici_adi="sql_injection";
-    $vt_sifre="";
-    $vt_sunucu="localhost";
-    $vt_adi="sql_injection";
+    $nom_del_server="localhost";
+    $nom_usuari="sql_injection";
+    $contrasenya="";
+    $nom_db="sql_injection";
 
 
-    $mysqli = new mysqli($vt_sunucu,$vt_kullanici_adi,$vt_sifre,$vt_adi);
+    $mysqli = new mysqli($nom_del_server,$nom_usuari,$contrasenya,$nom_db);
     mysqli_set_charset($mysqli,"utf8");
-    mysqli_error ( $mysqli);
 
+
+    if ($mysqli->connect_error) {
+        throw new mysqli_sql_exception($mysqli->connect_error);
+    }
    
     
-} catch (PDOException $e) {
+} catch (mysqli_sql_exception $e) {
     
-    echo 'Veri tabanı bağlantı hatası: '.$e;
+    echo 'La conexión ha sido rechazada.';
 
 }
 ?>
-
