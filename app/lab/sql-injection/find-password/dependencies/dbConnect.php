@@ -1,5 +1,3 @@
-
-
 <?php
 
 
@@ -17,7 +15,7 @@ try {
 
 
     if ($mysqli->connect_error) {
-        throw new mysqli_sql_exception($mysqli->connect_error)
+        throw new mysqli_sql_exception($mysqli->connect_error);
     }
    
     
