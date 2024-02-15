@@ -3,6 +3,25 @@ require("../../../lang/lang.php");
 $strings = tr();
 require("brute.php");
 
+$intentMax = 3; //Definim un màxim de intents per posar la contrasenya
+
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    // Comprovem si el màxim nombre de intents ha estat esgotat
+    if (!isset($_SESSION['login_attempts'])) {
+        $_SESSION['login_attempt'] = 1;
+    } else {
+        $_SESSION['login_attempts']++;
+    }
+
+    if ($_SESSION['login_attempts'] <= $intentMax) {
+        // Continua amb el intent de fer login
+        // Codi de validació login???
+    } else {
+        // Mostrem un missatge per pantalla
+        echo '<p>Has introduït el màxim d intents possibles. Intenta-ho més tard.<p>';
+    }
+}
+
 
 ?>
 <!doctype html>
